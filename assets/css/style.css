@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+*{
+	margin:0px;
+	padding:0px;
+	scroll-behavior:smooth;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	min-height:100vh;
+	padding-bottom:50px;
+	animation: animacija-01 0.9s;
+}
+@keyframes animacija-01{
+	from{
+		opacity:0;
+		transform:rotateX(-10deg);
+	}
+	to{
+		opacity:1;
+		transform:rotateX(0)
+	}
+}
+.position-relative{
+	position:relative;
+}
+.text-align{
+	text-align:center;
+}
+/*Pocetak Regiona Header*/
+header{
+	padding-top:25px;
+}
+.centriranje{
+	margin:0px auto;
+	width:80%;
+}
+.float-left{
+	float:left;
+}
+.header-logo{
+	font-size:40px;
+}
+.header-logo a{
+	text-decoration:none;
+}
+.header-logo a:visited{
+	text-decoration:none;
+	color:#a1f09c
+}
+nav{
+	float:right;
+}
+nav ul li{
+	margin:60px;
+	display:inline;
+	list-style-type:none;
+}
+nav ul li a{
+	text-decoration:none;
+	color:#000;
+	font-size:25px;
+}
+.cleaner{
+	clear:both;
+}
+nav ul li a:hover{
+	border-bottom:3px solid #a1f09c;
+	transition-duration: 0.2s;
+}
+.header-logo i:hover{
+	color:#a1f09c;
+	transition-duration: 0.4s;
+	cursor:pointer;
+}
+/*Kraj regiona Header*/
+/*Pocetak Regiona Main*/
+.background-image{
+	background-image:url("../img/background-image.jpg");
+	margin-bottom:100px;
+}
+.bg-image-both{
+	background-position:center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:100%;
+}
+.text{
+	padding:200px;
+	width:26%;
+	animation-name:animacija;
+	animation-duration:4s;
+}
+@keyframes animacija {
+  0%   { left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  100% { left:0px; top:0px;}
+}
+.text h1,p{
+	padding:10px;
+	color:#fff
+}
+.text h1{
+	font-size:22px;
+	font-weight:800;
+}
+mark{
+	font-size:15px;
+	padding:2px;
+}
+.border-radius{
+	border-radius:5%;
+}
+.bg-color{
+	background-color:#a1f09c;
+}
+.zastiti-se{
+	background-color:#a1f09c;
+	display:inline-block;
+	padding:6px;
+	left:200px;
+}
+.zastiti-se:hover{
+	background-color:#fff;
+	transition:0.4s;
+}
+.zastiti-se a{
+	text-decoration:none;
+}
+.okvir{
+	background-color:rgba(218, 232, 216,0.6);
+	width:60%;
+	top:540px;
+}
+.block01{
+	padding:60px;
+}
+.naslov h4{
+	font-size:23px;
+}
+.padding{
+	padding:25px;
+}
+#margin-left{
+	margin-left:70px;
+}
+.icon{
+	font-size:40px;
+}
+.kolona{
+	width:25%;
+	margin-right:1%;
+}
+.icon-margin{
+	margin-top:25px;
+}
+.box-shadow{
+	box-shadow: 5px 10px #e6e4dc;
+}
+.kolona-flex{
+	display:flex;
+	justify-content: center;
+	left:-50px
+}
+.kolona-margin{
+	margin-bottom:50px;
+}
+#margin-bottom p{
+	margin-bottom:30px;
+}
+.text01 p{
+	color:#000;
+}
+.text01 h3:hover,.icon i:hover{
+	color:#fff;
+	cursor:pointer;
+	transition-duration: 0.5s;	
+}
+.row{
+	width:100%;
+	height:200px;
+	background-color:#e6e4dc;
+	margin-top:70px;
+}
+.container-01{
+	padding-bottom:40px;
+	width:20%;
+	left:480px;
+	top:5px;
+}
+span{
+	font-size:35px;
+}
+.container-01 i{
+	text-align:center;
+	margin-left:10px;
+	margin-right:10px;
+	color:#989e98;
+}
+.container-01 h5{
+	text-align:center;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.font-size{
+	font-size:20px;
+}
+.container-01 h6{
+	margin-left:35px;
+	padding-bottom:10px;
+	font-size:18px;
+}
+.container-01 p{
+	color:#000;
+}
+.margin-left-25{
+	margin-left:25px;
+}
+.container-01 ul{
+	padding-left:40px;
+	list-style-type: none;
+	margin-bottom:10px;
+}
+.container-01 ul li{
+	padding-left: 30px;
+  background-image: url("../img/check-icon.png");
+  background-position: 0 0;
+  background-size: 23px 23px;
+  background-repeat: no-repeat;
+  margin-bottom:10px;
+}
+/*FORMA*/
+.container{
+	margin-top:50px;
+	width:20%;
+	padding:20px;
+	margin-bottom:60px;
+	left:260px;
+}
+.container h5{
+	text-align:center;
+	margin-bottom:20px;	
+}
+.forma-edit{
+	width:300px;
+	outline:none;
+	background:transparent;
+	border:none;
+	border-bottom:1.5px solid gray;
+	color:#fff;
+	font-size:18px;
+	margin-bottom:16px;	
+}
+form .submit{
+	background-color:#e6e4dc;
+	border-color:transparent;
+	color:#000;
+	font-size:15px;
+	letter-spacing:2px;
+	height:50px;
+	margin-top:20px;
+}
+form .submit:hover,.footer-lista i:hover{
+	background-color:#fff;
+	transition:0.6s;
+	cursor:pointer;
+}
+#txt-area{
+	height:100px;
+}
+/*Kraj Regiona Forma*/
+/*Pocetak Regiona Footer*/
+.footer{
+	width:100%;
+	background-color:#989e98;
+	position:absolute;
+    bottom:0px;
+	display:flex;
+	justify-content: space-evenly;
+}
+.footer-lista ul li i{
+	padding:10px;
+	font-size:25px;
+	color:#a1f09c;
+}
+.footer-lista i:hover{
+	border-radius:70%;
+}
+.footer-lista ul li{
+	padding:10px;
+	list-style-type: none;
+}
+.footer-lista ul{
+	display:flex;
+	justify-content: center;
+}
+.copyright{
+	right:90px;
+}
+.copyright p{
+	padding:20px;
+}
+/*Kraj Regiona Footer*/
+/*Pocetak Stranice Nas Tim*/
+/*Pocetak Regiona Main*/
+.background-image01{
+	background-image:url("../img/nas-tim.jpg");
+	padding:80px 0;
+	display:flex;
+	justify-content:center;
+}
+.transparentni-blok{
+	background-color:rgba(157, 163, 162,0.7);
+	display: inline-block;
+	position:relative;
+	top:40%;
+}
+.transparentni-blok section article{
+	float:left;
+	margin-left:20px;
+}
+.transparentni-blok section article:nth-last-of-type(4){
+	margin-left:0px;
+}
+.transparentni-blok section article figure img{
+	height:350px;
+	border-radius:25%;
+	padding:0px 25px;
+	transition: transform 1s;
+}
+.transparentni-blok img:hover{
+	transform: rotate(13deg);
+}
+.transparentni-blok section article figure figcaption,h1{
+	padding:10px 0;
+	font-size:20px;
+}
+/*Kraj Regiona Main*/
+/*Kraj stranice Nas-Tim*/
+/*Pocetak stranice o Autoru*/
+.bg-cover{
+	background-image:url(../img/pozadina-autor.jpg);
+	width:100%;
+	height:800px;
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.sadrzaj{
+	width:40%;
+	top:130px;
+	background-color:rgba(0,0,0,0.4);
+	padding:80px 20px;
+	border-radius:10px 80px;	
+}
+#autor figure{
+	text-align:center;
+}
+#slika-autor{
+	margin-right:5%;
+}
+#o-autoru-text{
+	width:400px;
+}
+#o-autoru-text h1{
+	margin-left:1%;
+	font-size:25px;
+}
+#autor{
+	display: flex;
+    justify-content:center;
+}
+#autor img{
+	width:250px;
+	border-radius:10%;
+}
+.animacija{
+	min-height:80vh;	
+	background-image: linear-gradient(125deg,#fff,#27ae60);
+	background-size:400% 400%;
+	animation: bganimation 5s infinite;
+}
+@keyframes bganimation{
+	0%{
+		background-position: 0% 50%;
+	}
+	50%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+
+
+
+
